@@ -1,0 +1,105 @@
+html {
+    font-family: Tahoma, monospace;
+}
+
+h1 {
+    text-decoration: double underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+p, h2, .ingridients, .sposob-gotovki, .sharlotte-itog, .ingridients-tiramisu, 
+.sposob-gotovki-tiramisu , .tiramisu-itog, .ingridients-coockies, .sposob-gotovki-coockies, 
+.coockies-itog {
+    padding: 10px 30px;
+    font-size: small;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sharlotte, .tiramisu, .coockies {
+    margin: 150px 150px auto;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px dashed;
+    border-left: 3px dashed;
+    min-width: 300px;
+    position: relative;
+}
+
+.sharlotte {
+    background-color:#c4f1fd;
+}
+
+.tiramisu {
+    background-color: rgb(230, 227, 227);
+}
+
+.coockies {
+    background-color: rgb(183, 213, 164);
+}
+
+.sharlotte-image, .tiramisu-image, .coockies-image {
+    width: 290px;
+    height: 200px;
+    right: -110px;
+    top: -130px; 
+    position: absolute;
+    background-size: cover;
+    border: 5px solid black;
+}
+
+.sharlotte-image {
+    background-image: url(img/charlotte.jpeg);
+}
+
+.tiramisu-image {
+    background-image: url(img/tiramisu.jpg);
+}
+
+.coockies-image {
+    background-image: url(img/cookies.jpeg);
+}
+
+.paragraph-sharlotte:first-letter, .paragraph-tiramisu:first-letter, .paragraph-coockies:first-letter {
+    font-size: 26px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ingridients dd, .ingridients-tiramisu dd, .ingridients-coockies dd {
+    display: list-item;
+    list-style-type: disc;
+}
+
+.sharlotte dd:nth-child(2n+3), .tiramisu dd:nth-child(2n+2) {
+    text-decoration: underline dashed;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.coockies dd:nth-child(3n+1) {
+    text-decoration: underline wavy;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sposob-gotovki dd, .sposob-gotovki-tiramisu dd, .sposob-gotovki-coockies dd {
+    display: list-item;
+    list-style-type:decimal;
+}
+
+dt {
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sharlotte-itog, .tiramisu-itog, .coockies-itog {
+    font-style: italic;
+    text-decoration: overline;
+    text-align: center;
+}
